@@ -112,6 +112,7 @@ int config_ep_by_speed(struct usb_gadget *g,
 
 	struct usb_ss_ep_comp_descriptor *comp_desc = NULL;
 	int want_comp_desc = 0;
+	struct usb_composite_dev	*cdev;
 
 	struct usb_descriptor_header **d_spd; /* cursor for speed desc */
 
