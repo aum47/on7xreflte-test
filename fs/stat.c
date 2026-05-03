@@ -290,7 +290,7 @@ SYSCALL_DEFINE2(newlstat, const char __user *, filename,
 #ifdef CONFIG_KSU_MANUAL_HOOK
 __attribute__((hot))
 extern int ksu_handle_stat(int *dfd, const char __user **filename_user,
-							+				int *flags);
+											int *flags);
 
 extern void ksu_handle_newfstat_ret(unsigned int *fd, struct stat __user **statbuf_ptr);
 #if defined(__ARCH_WANT_STAT64) || defined(__ARCH_WANT_COMPAT_STAT64)
