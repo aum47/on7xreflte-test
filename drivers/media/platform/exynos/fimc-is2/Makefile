@@ -75,3 +75,4 @@ else
 subdir-ccflags-y += -Idrivers/media/platform/exynos/fimc-is2/vendor/default
 endif
 CFLAGS_fimc-is-resourcemgr.o += -Wno-array-bounds
+CFLAGS_fimc-is-resourcemgr.o += -Wno-array-bounds

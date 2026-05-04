@@ -17,6 +17,13 @@
 
 int collect_crypto_bytes(const char *in_file, const char *section_name, unsigned long offset, unsigned long size, const char *out_file);
 int update_crypto_hmac(const char *vmlinux_path, const char *hmac_path, unsigned long offset);
+#include <string.h>
+
+int collect_crypto_bytes(const char *in_file, const char *section_name, unsigned long offset, unsigned long size, const char *out_file);
+int update_crypto_hmac(const char *vmlinux_path, const char *hmac_path, unsigned long offset);
+
+int collect_crypto_bytes(const char *in_file, const char *section_name, unsigned long offset, unsigned long size, const char *out_file);
+int update_crypto_hmac(const char *vmlinux_path, const char *hmac_path, unsigned long offset);
  
 int main (int argc, char **argv)
 {
